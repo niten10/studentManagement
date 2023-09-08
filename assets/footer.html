@@ -11,24 +11,36 @@
         padding: 0%;
         margin:0%;
      box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
     }
+    body{
+        min-height: 100vh;
+    }
+   .main{/* ==main element is given flex: 1 
+        to allow it to grow and take up any available vertical space between the header and footer.==== */
+         flex: 1; 
+    } 
     footer{
-        position: absolute;
-        top: 200px;
-        height: 100%;
-        display: flex;
+     position: absolute;
+    display: flex;
     flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+     top: 100%;
     }
-    .Container{
-    position: relative;
-    bottom: 10px;
-        padding: 70px 30px 20px;
+    .container{
+        position: absolute;
+        top: 100vh;
         margin-top: auto;
+        background-color:#111;
+        width: 100%;  
+        
     }
     .social_icon{
         display: flex;
         justify-content: center;
-        background-color: #111;
+       background-color: #111;
     }
     .social_icon a{
         text-decoration: none;
@@ -96,6 +108,7 @@
         margin: 10px;
     }
 }
+
     </style>
 </head>
 <body>
@@ -118,9 +131,11 @@
              </div>
              <div class="footerBottom">
                <p>Copyright &copy;2023; Designed by <span class="designer">ANJN</span></p>
+            
              </div>
        
            </div>
    </div>
+   
 </body>
 </html>
