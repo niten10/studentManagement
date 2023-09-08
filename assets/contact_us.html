@@ -103,13 +103,16 @@ body{
 .content .right-side .topic-text{
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   font-size: 23px;
   font-weight: 600;
  width: 150px;
  border-radius: 10px;
-  color: #0E4D6C;
-  background-color: white;
-  opacity: 0.8;
+  color: #fff;
+  background-color: #0E4D6C;
+
   border: 2px;
   border-radius:8px;
   align-items:center;
@@ -118,19 +121,17 @@ body{
 
 .right-side pre{
     position: absolute;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
     top: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 680px;
-    background:#fff;
-    opacity: 0.8;
-border-radius: 8px;
-}
-.content .right-side .topic-text:hover{
-    color: #F05833;
+    padding: 5px ;
+    width: 800px;
+    background: #0E4D6C;
+   color:#fff;
+   border-radius: 5px;
 
 }
 .right-side .input-box{
@@ -151,13 +152,13 @@ border-radius: 8px;
   border: none;
   outline: none;
   font-size: 16px;
-  background:#fff;
-  opacity: 0.7;
+  opacity: 0.9;
+ 
   border-radius:10px;
   border: 2px black;
   padding: 0 15px;
   resize: none;
-  color: #F05833;
+  color: #0E4D6C;
 }
 .right-side .message-box{
   min-height: 110px;
@@ -179,6 +180,7 @@ border-radius: 8px;
   background:#0E4D6C;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-left: 600px;
 }
 .button input[type="button"]:hover{
   background: #F05833;
@@ -244,6 +246,7 @@ border-radius: 8px;
       </div>
       <div class="right-side">
         <div class="topic-text">Contact Us</div>
+      
         
       <form action="#">
         <div class="input-box">
